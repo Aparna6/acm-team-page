@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SRM ACM</title>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="global.css">
+	
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 class="kz-page-title text-center">Office Bearers</h1>
+
+	<section class="main-content">
+		<div class="container">
+                <div class="heading-1">
+                        <p><b>Section</b>-1</p>
+                    </div>
+			<div class="row">
+                    <div class="row kz-section-1"></div>    
+        </div>
+		</div>
+    </section>
+    
+        <section class="main-content">
+            <div class="container">
+                    <div class="heading-2">
+                            <p><b>Section</b>-2</p>
+                        </div>
+                <div class="row">
+                        <div class="row kz-section-2"></div>    
+            </div>
+            </div>
+        </section>
+        <section class="main-content">
+                <div class="container">
+                        <div class="heading-3">
+                                <p><b>Section</b>-3</p>
+                            </div>
+                    <div class="row">
+                            <div class="row kz-section-3"></div>    
+                </div>
+                </div>
+            </section>
+            <section class="main-content">
+                    <div class="container">
+                            <div class="heading-4">
+                                    <p><b>Section</b>-4</p>
+                                </div>
+                        <div class="row">
+                                <div class="row kz-section-4"></div>    
+                    </div>
+                    </div>
+                </section>
+            
+                <script src="res/main.js" async defer></script>
+    <script>
+       
+       const team1 = [
+            {
+                name: "Shreya",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Shreya",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Shreya",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Shreya",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Shreya",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            }
+            ]
+        
+        const team2 = [
+            {
+                name: "Aman",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Aman",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Aman",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Aman",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Aman",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            }
+        ]
+        const team3 = [
+            {
+                name: "Dharini",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Dharini",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Dharini",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Dharini",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Dharini",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            }
+        ]
+        const team4 = [
+            {
+                name: "Apurva",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Apurva",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Apurva",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Apurva",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            },
+            {
+                name: "Apurva",
+                designation: "Associate Lead",
+                photo: "t1.png"
+            }
+           ]
+           team1.forEach(member => {
+            
+            const first = `
+            <div class="kz-profile-card">
+						<div class="kz-profile-card_cover">
+						</div>
+						<div class="kz-profile-card_padding">
+							<div class="kz-profile-card_image">
+								<img src="res/img/team/${member.photo}" class="card-img-top">				
+							</div>
+							<div class="kz-profile-card_details">
+                                <p>${member.name}</p>
+                                <p>${member.designation}</p>
+							
+							</div>
+						</div>
+`
+           
+
+            const node = htmlToElement(first)
+            document.querySelector('.kz-section-1').appendChild(node)
+        })
+
+
+        team2.forEach(member => {
+
+        const second = `
+        <div class="kz-profile-card">
+						<div class="kz-profile-card_cover-2">
+						</div>
+						<div class="kz-profile-card_padding">
+							<div class="kz-profile-card_image">
+								<img src="res/img/team/${member.photo}" class="card-img-top">				
+							</div>
+							<div class="kz-profile-card_details-2">
+                                <p>${member.name}</p>
+                                <p>${member.designation}</p>
+							
+							</div>
+						</div>
+`
+           
+
+            const node = htmlToElement(second)
+            document.querySelector('.kz-section-2').appendChild(node)
+        })
+
+        team3.forEach(member => {
+
+const third = `
+<div class="kz-profile-card">
+						<div class="kz-profile-card_cover-3">
+						</div>
+						<div class="kz-profile-card_padding">
+							<div class="kz-profile-card_image">
+								<img src="res/img/team/${member.photo}" class="card-img-top">				
+							</div>
+							<div class="kz-profile-card_details-3">
+                                <p>${member.name}</p>
+                                <p>${member.designation}</p>
+							
+							</div>
+						</div>
+`
+   
+
+    const node = htmlToElement(third)
+    document.querySelector('.kz-section-3').appendChild(node)
+})
+
+team4.forEach(member => {
+
+const fourth = `
+<div class="kz-profile-card">
+						<div class="kz-profile-card_cover-4">
+						</div>
+						<div class="kz-profile-card_padding">
+							<div class="kz-profile-card_image">
+								<img src="res/img/team/${member.photo}" class="card-img-top">				
+							</div>
+							<div class="kz-profile-card_details-4">
+                                <p>${member.name}</p>
+                                <p>${member.designation}</p>
+							
+							</div>
+						</div>
+`
+   
+
+    const node = htmlToElement(fourth)
+    document.querySelector('.kz-section-4').appendChild(node)
+})
+
+        function htmlToElement(html) {
+            var template = document.createElement('template');
+            html = html.trim(); // Never return a text node of whitespace as the result
+            template.innerHTML = html;
+            return template.content.firstChild;
+        }
+
+    </script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
