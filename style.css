@@ -66,7 +66,7 @@ body {
   background: #fff;
   text-align: center;
   margin-bottom: 40px;
-  margin-right: 40px;
+  margin-right: 20px;
   margin-top: 40px;
   border-radius: 13px;
   -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.36);
@@ -166,7 +166,7 @@ box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.36);
 }
 
 .kz-profile-card .kz-profile-card_padding {
-  padding: 25px;
+  padding: 40px;
   position: relative;
   margin-top: -75px;
 }
